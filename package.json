@@ -1,0 +1,16 @@
+{
+  "name": "mod01-csv2json",
+  "version": "1.0.0",
+  "description": "Module 1 Assignment Lab: CSV to JSON Converter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csvtojson": "^1.1.9",
+    "request": "^2.83.0"
+  }
+}
