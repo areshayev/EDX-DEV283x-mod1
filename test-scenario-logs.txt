@@ -1,0 +1,52 @@
+======================
+==TEST #1
+# csv file - need download
+# number of records in CSV file = 1000
+# goal - CSV file downloaded, JSON file, 1000 records
+
+PS E:\workspace\AngularCli\edx\mod01-csv2json> node .\index.js
+downloading  http://prod-edxapp.edx-cdn.org/assets/courseware/v1/07d100219da1a726dad5eddb090fa215/asset-v1:Microsoft+DEV283x+2T2017+type@asset+block/customer-data.csv
+downloading...
+download - completed to folder ./data
+convert CSV to JSON...
+done
+save JSON file...
+done
+
+=============
+
+======================
+==TEST #2 - CSV file exists
+# csv file - downloaded. skip this
+# number of records in CSV file = 1000
+# goal - CSV download - skip, JSON file, 1000 records
+
+PS E:\workspace\AngularCli\edx\mod01-csv2json> node .\index.js
+downloading  http://prod-edxapp.edx-cdn.org/assets/courseware/v1/07d100219da1a726dad5eddb090fa215/asset-v1:Microsoft+DEV283x+2T2017+type@asset+block/customer-data.csv
+downloading...
+download - completed to folder ./data
+convert CSV to JSON...
+done
+save JSON file...
+done
+
+=============
+
+
+======================
+==TEST #3 - CSV file exists and has 1010 records
+# csv file - downloaded. skip this
+# number of records in CSV file = 1005
+# goal - CSV download - skip, JSON file, 1000 records
+
+PS E:\workspace\AngularCli\edx\mod01-csv2json> node .\index.js
+downloading  http://prod-edxapp.edx-cdn.org/assets/courseware/v1/07d100219da1a726dad5eddb090fa215/asset-v1:Microsoft+DEV283x+2T2017+type@asset+block/customer-data.csv
+was already exists in folder:  ./data  skip download
+convert CSV to JSON...
+reach 1000 lines - unsubscribe json event
+done
+save JSON file...
+file exists in folder: we need remove it
+done
+=============
+
